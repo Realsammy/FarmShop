@@ -1,2 +1,2 @@
-# noteapp
-React Note App
+# FarmsEquipment store
+
