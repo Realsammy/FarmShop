@@ -144,7 +144,7 @@ width: 100%;
 .hero-banner-container button{
    border-radius: 15px;
   padding: 10px 16px;
-  background-color: #f02d34;
+  background-color: #035e28;
   color: white;
   border: none;
   margin-top: 40px;
@@ -212,7 +212,7 @@ text-align: end;
 }
 .footer-banner-container{
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: #035e28;;
   border-radius: 15px;
   position: relative;
   height: 400px;
@@ -405,7 +405,7 @@ padding: 30px 65px;
   margin-top: 10px;
   margin-top: 40px;
   text-transform: uppercase;
-  background-color: #f02d34;
+  background-color: #035e28;;
   color: #fff;
   cursor: pointer;
     transform: scale(1, 1);
@@ -497,7 +497,7 @@ padding: 30px 65px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: #f02d34;
+  color: #035e28;
   cursor: pointer;
   width: 200px;
    transform: scale(1, 1);
@@ -510,7 +510,7 @@ padding: 30px 65px;
   width: 200px;
 
   padding: 10px 20px;
-  background-color: #f02d34;
+  background-color: #035e28;;
   color: white;
   border: none;
   margin-top: 40px;
