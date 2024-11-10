@@ -1,22 +1,37 @@
+# Component definition for the Next.js application
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: nextjs-app
-  namespace: farmshop   # <-- Added a custom namespace
   description: A Next.js application
-  tags:
-    - nextjs
-    - frontend
-    - react
   annotations:
-    backstage.io/techdocs-ref: url:https://your-docs-url
+    github.com/project-slug: Realsammy/FarmShop
+    backstage.io/techdocs-ref: dir:.
+    demo.backstage.io/techdocs-builder: local
 spec:
   type: website
+  owner: infrastructure-team
+  lifecycle: production
+  system: fullstack-system
+  consumesApis:
+    - nextjs-api
+
+---
+
+# API definition for the Next.js application
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: nextjs-api
+  description: API exposed by the Next.js application
+spec:
+  type: openapi
   lifecycle: production
   owner: infrastructure-team
-  system: fullstack-system
-  providesApis:
-    - your-nextjs-api
+  definition:
+    $text: https://your-docs-url/openapi.json
+  apiConsumedBy:
+    - nextjs-app
 
 ---
 
