@@ -1,11 +1,16 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: petstore
-  description: The Petstore API
+  name: artist-web
+  description: The place to be, for great artists
 spec:
-  type: openapi
+  type: website
   lifecycle: production
-  owner: petstore@example.com
-  definition:
-    $text: https://petstore.swagger.io/v2/swagger.json
+  owner: artist-relations-team
+  system: artist-engagement-portal
+  dependsOn:
+    - resource:default/artists-db
+  dependencyOf:
+    - component:default/artist-web-lookup
+  providesApis:
+    - artist-api
