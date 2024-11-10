@@ -10,7 +10,7 @@ metadata:
     demo.backstage.io/techdocs-builder: local
 spec:
   type: website
-  owner: realsamy86
+  owner: backstage/maintainers
   lifecycle: production
   consumesApis:
     - demo-graphql
