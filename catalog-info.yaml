@@ -7,7 +7,7 @@ metadata:
   annotations:
     github.com/project-slug: Realsammy/FarmShop
     backstage.io/techdocs-ref: dir:.
-    demo.backstage.io/techdocs-builder: local
+    #demo.backstage.io/techdocs-builder: local
 spec:
   type: website
   owner: infrastructure-team
