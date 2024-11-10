@@ -40,7 +40,7 @@ metadata:
   name: maintainers
   description: The Backstage maintainers team
 spec:
-  type: user
+  type: User
   profile:
     displayName: Backstage Maintainers
   parent: backstage
