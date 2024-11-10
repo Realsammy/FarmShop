@@ -1,0 +1,16 @@
+
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: order-service
+  description: This service receives new orders and processes them
+  tags:
+    - nodejs
+    - backend
+spec:
+  type: service
+  lifecycle: production
+  owner: backend-team
+
+
