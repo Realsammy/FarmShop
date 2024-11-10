@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backstage-demo
+  name: nextjs-app
   description: An example deployment of a Backstage application.
   annotations:
     github.com/project-slug: backstage/demo
@@ -10,20 +10,6 @@ metadata:
 spec:
   type: website
   owner: backstage/maintainers
-  lifecycle: experimental
+  lifecycle: production
   consumesApis:
     - demo-graphql
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: demo-graphql
-  description: GraphQL Backend Plugin
-spec:
-  type: graphql
-  lifecycle: production
-  owner: backstage/maintainers
-  apiConsumedBy:
-    - backstage-demo
- # definition:
-    #$text: https://demo.backstage.io/api/graphql/schema
