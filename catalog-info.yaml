@@ -18,23 +18,7 @@ spec:
 
 ---
 
-# API definition for the Next.js application
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: nextjs-api
-  description: API exposed by the Next.js application
-spec:
-  type: openapi
-  lifecycle: production
-  owner: infrastructure-team
-  definition: https://raw.githubusercontent.com/Realsammy/FarmShop/master/openapi.json
-  apiConsumedBy:
-    - nextjs-app
-
----
-
-# Location definition for the GitHub repository
+# Location definition for the GitHub repository (Optional: Only if needed separately)
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
