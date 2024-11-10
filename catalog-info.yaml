@@ -3,13 +3,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: frontstore
+  name: order-service
   description: This is a nxstjs website for farmshop
   tags:
     - nodejs
     - backend
 spec:
-  type: service
+  type: website
   lifecycle: production
   owner: dev
 
