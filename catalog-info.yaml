@@ -25,5 +25,5 @@ spec:
   owner: backstage/maintainers
   apiConsumedBy:
     - backstage-demo
-  definition:
-    $text: https://demo.backstage.io/api/graphql/schema
+ # definition:
+    #$text: https://demo.backstage.io/api/graphql/schema
