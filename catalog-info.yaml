@@ -1,3 +1,4 @@
+# Component definition for the Next.js application
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -7,12 +8,19 @@ metadata:
     - nextjs
     - frontend
     - react
+  annotations:
+    backstage.io/techdocs-ref: url:https://your-docs-url
 spec:
   type: website
   lifecycle: production
   owner: infrastructure-team
   system: fullstack-system
-  
+  providesApis:
+    - your-nextjs-api
+
+---
+
+# Location definition for the GitHub repository
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
@@ -20,13 +28,3 @@ metadata:
 spec:
   type: url
   target: https://github.com/Realsammy/FarmShop
-
-  metadata:
-  annotations:
-    backstage.io/techdocs-ref: url:https://your-docs-url
-spec:
-  providesApis:
-    - your-nextjs-api
-
-
-  
