@@ -18,7 +18,7 @@ spec:
   providesApis:
     - your-nextjs-api
 
-#---
+---
 
 # Location definition for the GitHub repository
 apiVersion: backstage.io/v1alpha1
@@ -27,5 +27,4 @@ metadata:
   name: nextjs-repo
 spec:
   type: url
-  target: https://github.com/Realsammy/FarmShop/catalog-info.yaml
-  
+  target: https://github.com/Realsammy/FarmShop
