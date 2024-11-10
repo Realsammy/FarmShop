@@ -1,16 +1,32 @@
-
-
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: order-service
-  description: This is a nxstjs website for farmshop
+  name: nextjs-app
+  description: A Next.js application
   tags:
-    - nodejs
-    - backend
+    - nextjs
+    - frontend
+    - react
 spec:
   type: website
   lifecycle: production
-  owner: dev
+  owner: infrastructure-team
+  system: fullstack-system
+  
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: nextjs-repo
+spec:
+  type: url
+  target: https://github.com/Realsammy/FarmShop
+
+  metadata:
+  annotations:
+    backstage.io/techdocs-ref: url:https://your-docs-url
+spec:
+  providesApis:
+    - your-nextjs-api
 
 
+  
