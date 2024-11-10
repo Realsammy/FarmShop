@@ -1,3 +1,4 @@
+# Component definition for the Next.js application
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -13,3 +14,45 @@ spec:
   lifecycle: production
   consumesApis:
     - demo-graphql
+
+---
+# API definition for demo-graphql
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-graphql
+  description: A sample GraphQL API used by the Next.js application
+spec:
+  type: graphql
+  lifecycle: production
+  owner: backstage/maintainers
+  definition:
+    $text: |
+      type Query {
+        hello: String
+      }
+
+---
+# Group definition for backstage maintainers
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: maintainers
+  description: The Backstage maintainers team
+spec:
+  type: team
+  profile:
+    displayName: Backstage Maintainers
+  parent: backstage
+
+---
+# Group definition for backstage
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: backstage
+  description: The Backstage organization
+spec:
+  type: organization
+  profile:
+    displayName: Backstage
