@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: nextjs-app2
+  name: nextjs-app-unique
   description: A Next.js application
   annotations:
     github.com/project-slug: Realsammy/FarmShop
@@ -15,14 +15,13 @@ spec:
   system: fullstack-system
   consumesApis:
     - nextjs-api
-
 ---
 
-# Location definition for the GitHub repository (Optional: Only if needed separately)
+# Location definition for the GitHub repository
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: nextjs-repo
+  name: nextjs-repo-unique
 spec:
   type: url
   target: https://github.com/Realsammy/FarmShop/blob/master/catalog-info.yaml
