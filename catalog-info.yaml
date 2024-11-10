@@ -1,8 +1,8 @@
-# Component definition for the Next.js application
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: nextjs-app
+  namespace: farmshop   # <-- Added a custom namespace
   description: A Next.js application
   tags:
     - nextjs
