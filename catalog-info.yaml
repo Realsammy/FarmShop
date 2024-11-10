@@ -28,8 +28,7 @@ spec:
   type: openapi
   lifecycle: production
   owner: infrastructure-team
-  definition:
-    #$text: https://your-docs-url/openapi.json
+  definition: https://raw.githubusercontent.com/Realsammy/FarmShop/master/openapi.json
   apiConsumedBy:
     - nextjs-app
 
