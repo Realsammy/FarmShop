@@ -3,7 +3,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: nextjs-app
-  description: Deploying a sample nextjs application.
+  description: Deploying a sample Next.js application.
   annotations:
     github.com/project-slug: backstage/demo
     backstage.io/techdocs-ref: dir:.
@@ -33,26 +33,26 @@ spec:
       }
 
 ---
-# Group definition for backstage maintainers
+# Group definition for backstage/maintainers (corrected)
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: maintainers
+  name: backstage/maintainers
   description: The Backstage maintainers team
 spec:
-  type: User
+  type: group  # Correct type for group definition
   profile:
     displayName: Backstage Maintainers
-  parent: backstage
+  parent: backstage  # Ensure the parent group exists
 
 ---
-# Group definition for backstage
+# Group definition for backstage (if it doesn't exist)
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: backstage
   description: The Backstage organization
 spec:
-  type: organization
+  type: organization  # Type for an organization
   profile:
     displayName: Backstage
