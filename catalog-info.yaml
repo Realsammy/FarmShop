@@ -3,7 +3,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Farms equipment store
+  name: frontstore
   description: This is a nxstjs website for farmshop
   tags:
     - nodejs
