@@ -18,7 +18,7 @@ spec:
   providesApis:
     - your-nextjs-api
 
----
+#---
 
 # Location definition for the GitHub repository
 apiVersion: backstage.io/v1alpha1
