@@ -27,4 +27,4 @@ metadata:
   name: nextjs-repo
 spec:
   type: url
-  target: https://github.com/Realsammy/FarmShop
+  target: https://github.com/Realsammy/FarmShop/blob/master/catalog-info.yaml
